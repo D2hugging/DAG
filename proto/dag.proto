@@ -1,0 +1,15 @@
+synyax = "proto3";
+
+package dag;
+
+service DAGService {
+    rpc Execute(DAGRequest) returns (DAGResponse) {}
+}
+
+message DAGRequest {
+    string name = 1;
+}
+
+message DAGRequest {
+    string result = 1;
+}
